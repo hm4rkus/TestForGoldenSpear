@@ -35,7 +35,7 @@ function renderMessages(messages, messagesIndex, isLoading) {
     else if (messages) {
         return messages.map((item) => {
             return (
-                <div class="p-2 mt-3 text-left Message">{item[messagesIndex]}</div>
+                <div className="p-2 my-3 text-left Message">{item[messagesIndex]}</div>
             )
         })
     }
