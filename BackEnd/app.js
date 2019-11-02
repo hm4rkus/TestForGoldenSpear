@@ -137,7 +137,7 @@ app.post(route + '/user/login', (req, res) => {
 
   if (!body.username || !body.password)
     res.status(400).send({ success: false, message: "Bad request" })
-
+  else{
 
   databaseConnection.collection("Users").findOne({ username: body.username }, function (err, response) {
     if (err) console.log(err);
@@ -156,7 +156,7 @@ app.post(route + '/user/login', (req, res) => {
     else res.send({ success: false, message: "User does not exist" })
   })
 
-
+  }
 })
 
 app.post(route + "/message", verifyToken, async (req, res) => {
@@ -166,6 +166,7 @@ app.post(route + "/message", verifyToken, async (req, res) => {
   if (!body.message)
     res.status(400).send({ success: false, message: "Bad request" })
 
+    else{
   let count = await databaseConnection.collection("Messages").find().count();
 
   if (count === 0) {
@@ -190,7 +191,7 @@ app.post(route + "/message", verifyToken, async (req, res) => {
 
 
   }
-
+    }
 
   /*
 databaseConnection.collection("Messages").insertOne({message: message}, function (err) {
@@ -221,6 +222,7 @@ app.post(route + '/user/signup', async (req, res) => {
   if (!body.username || !body.password)
     res.status(400).send({ success: false, message: "Bad request" })
 
+    else{
   let encryptedPassword = CryptoJS.SHA3(body.password);
 
 
@@ -238,7 +240,7 @@ app.post(route + '/user/signup', async (req, res) => {
     res.send({ success: false, message: "User already exists" });
 
   }
-
+    }
 })
 
 
