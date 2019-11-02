@@ -105,7 +105,7 @@ export default function SignUp() {
                                     </Form.Control.Feedback>
                                 <Form.Group className="pt-3" onClick={() => handleCheck()}>
                                     <Form.Check label="I agree to the terms and conditons" checked={check} onChange={() => handleCheck()} required />
-                                    <div class="pt-3">Are you registered?  <a href="/signIn">Click here to log in!</a></div>
+                                    <div className="pt-3">Are you registered?  <a href="/signIn">Click here to log in!</a></div>
 
                                 </Form.Group>
                                 <div className="d-flex justify-content-end">

@@ -11,7 +11,6 @@ import { Button, Form, Nav, Navbar, Card } from 'react-bootstrap';
 async function handleStart(setMessages, setLoading) {
 
     let response = await getMessages();
-    console.log(response);
     if (response.success) {
         setMessages(response.result);
         setLoading(false);
@@ -34,7 +33,6 @@ function renderMessages(messages, messagesIndex, isLoading) {
         )
     }
     else if (messages) {
-        console.log(messages)
         return messages.map((item) => {
             return (
                 <div class="p-2 mt-3 text-left Message">{item[messagesIndex]}</div>
@@ -50,7 +48,6 @@ async function sendMessage(messages, messageInput, setMessages, setInput) {
     if (true) {
         setMessages(messagesAux.push({ decrypted: messageInput, encrypted: "asdasdasdad" }));
         setInput("");
-        console.log(messages);
     }
 
 }
@@ -87,7 +84,6 @@ export default function LogIn() {
     async function handleStart() {
 
         let response = await getMessages();
-        console.log(response);
         if (response.success) {
             setMessages(response.result);
             setLoading(false);
@@ -110,7 +106,6 @@ export default function LogIn() {
             )
         }
         else if (messages.length != 0) {
-            console.log(messages)
             return messages.map((item) => {
                 return (
                     <div className="row d-flex justify-content-center">
@@ -134,7 +129,6 @@ export default function LogIn() {
             if (response.success) {
                 setMessages([...messages, response.result]);
                 setInput("");
-                console.log(messages);
             }
 
         }

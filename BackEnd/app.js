@@ -48,7 +48,6 @@ client.connect(async function (err, dbR) {
 
   if (err) throw err;
   databaseConnection = dbR.db(dbName);
-  console.log("Connected!")
 
 });
 
@@ -71,7 +70,6 @@ function verifyToken(req, res, next) {
 function decimalOfcrc8(message) {
 
   let hexa = crc.crc8(Buffer.from(message, 'utf8')).toString('hex');
-  console.log(parseInt("0x" + hexa));
   return parseInt("0x" + hexa);
 }
 
@@ -209,13 +207,11 @@ app.get(route + "/message", verifyToken, async (req, res) => {
   let messages = []
   let currentCrc = 0;
   await databaseConnection.collection("Messages").find().forEach(function (document) {
-    console.log(currentCrc);
     messages.push({decrypted: caesarUncipher(document.message, currentCrc), encrypted: document.message });
     currentCrc += document.crc;
 
   })
 
-  console.log(messages);
   res.send({success: true, result: messages })
 })
 

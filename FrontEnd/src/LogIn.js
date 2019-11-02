@@ -17,7 +17,6 @@ export default function LogIn() {
 
             let response = await loginCall(email, password);
             if (response.success) {
-                console.log(response);
                 localStorage.setItem("userToken", JSON.stringify({ token: response.token, email: email, expiration: new Date().getTime() + 2 * 60 * 60 * 1000 }));
                 window.location.href = "/messages"
             }
@@ -25,7 +24,6 @@ export default function LogIn() {
                 setError(true);
             }
 
-            console.log(response);
         }
     
 
