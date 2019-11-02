@@ -1,0 +1,1059 @@
+(this["webpackJsonpgolden-spear"] = this["webpackJsonpgolden-spear"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".App {\n  text-align: center;\n}\n\n.App-logo {\n  height: 40vmin;\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #09d3ac;\n}\n\n.Message{\n  border-radius: 10px;\n  border: grey 1px;\n  border-style: solid;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _LogIn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LogIn */ "./src/LogIn.js");
+/* harmony import */ var _SignUp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SignUp */ "./src/SignUp.js");
+/* harmony import */ var _Chat__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Chat */ "./src/Chat.js");
+var _jsxFileName = "C:\\Users\\hmarkus\\Desktop\\goldenSpear\\golden-spearTestFront\\src\\App.js";
+
+
+
+
+
+
+function App() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LogIn__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/signUp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SignUp__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/messages",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Chat__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_LogIn__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/Chat.js":
+/*!*********************!*\
+  !*** ./src/Chat.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LogIn; });
+/* harmony import */ var C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helpers_APIcalls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers/APIcalls */ "./src/helpers/APIcalls.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_5__);
+
+var _jsxFileName = "C:\\Users\\hmarkus\\Desktop\\goldenSpear\\golden-spearTestFront\\src\\Chat.js";
+
+
+
+
+
+
+function handleStart() {}
+
+function onLogOutClick() {
+  localStorage.removeItem("userToken");
+  window.location.href = "/";
+}
+
+function LogIn() {
+  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState2 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+        email = _useState2[0],
+        setEmail = _useState2[1];
+
+  const _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState4 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+        password = _useState4[0],
+        setPassword = _useState4[1];
+
+  const _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+        _useState6 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState5, 2),
+        error = _useState6[0],
+        setError = _useState6[1];
+
+  handleStart();
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", {
+    className: "navbar navbar-expand navbar-light bg-light",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "navbar-brand",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Goldenspear"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "navbar-nav mr-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav-item active",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav-link",
+    href: "/login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Messages"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: {
+      cursor: "pointer"
+    },
+    onClick: () => {
+      onLogOutClick();
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faSignOutAlt"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }), " Log out")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "mt-4 text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "container d-flex flex-column",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, "Messages"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "MessagesContainer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, " sadasdad")))));
+}
+
+/***/ }),
+
+/***/ "./src/LogIn.js":
+/*!**********************!*\
+  !*** ./src/LogIn.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LogIn; });
+/* harmony import */ var C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helpers_APIcalls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers/APIcalls */ "./src/helpers/APIcalls.js");
+
+var _jsxFileName = "C:\\Users\\hmarkus\\Desktop\\goldenSpear\\golden-spearTestFront\\src\\LogIn.js";
+
+
+
+async function onLoginClick(email, password, setError) {
+  let response = await Object(_helpers_APIcalls__WEBPACK_IMPORTED_MODULE_2__["loginCall"])(email, password);
+
+  if (response.success) {
+    console.log(response);
+    localStorage.setItem("userToken", JSON.stringify({
+      token: response.token,
+      email: email,
+      expiration: new Date().getTime() + 2 * 60 * 60 * 1000
+    }));
+    window.location.href = "/messages";
+  } else {
+    setError(true);
+  }
+
+  console.log(response);
+}
+
+function handleStart() {
+  let token = localStorage.getItem("userToken");
+
+  if (token) {
+    let tokenJson = JSON.parse(token);
+    if (tokenJson.expiration > new Date().getTime()) window.location.href = "/messages";
+  }
+}
+
+function LogIn() {
+  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState2 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+        email = _useState2[0],
+        setEmail = _useState2[1];
+
+  const _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState4 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+        password = _useState4[0],
+        setPassword = _useState4[1];
+
+  const _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+        _useState6 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState5, 2),
+        error = _useState6[0],
+        setError = _useState6[1];
+
+  handleStart();
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", {
+    className: "navbar navbar-expand navbar-light bg-light",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "navbar-brand",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, "Goldenspear"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "navbar-nav mr-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav-link active",
+    href: "/login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "Login")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav-link",
+    href: "/singup",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, "Sign Up")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "pt-5 mt-5 text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "container d-flex flex-column justify-content-center align-items-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card col-12 col-sm-10 col-md-8 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", {
+    className: "pt-3",
+    style: {
+      fontSize: 21
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, " Log in "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card-body text-left",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "Email address"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "email",
+    className: "form-control",
+    placeholder: "Email",
+    onChange: event => {
+      setEmail(event.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    className: "pt-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }, "Password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "password",
+    className: "form-control",
+    placeholder: "Password",
+    onChange: event => {
+      setPassword(event.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "pt-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, "Are you not registered?  ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "/signUp",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, "Click here to sign up!")), error && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "pt-3",
+    style: {
+      color: "red"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, "Incorrect email or password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    onClick: () => onLoginClick(email, password, setError),
+    className: "btn btn-primary mt-4 float-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "Login"))))));
+}
+
+/***/ }),
+
+/***/ "./src/SignUp.js":
+/*!***********************!*\
+  !*** ./src/SignUp.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SignUp; });
+/* harmony import */ var C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_goldenSpear_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/goldenSpear.png */ "./src/images/goldenSpear.png");
+/* harmony import */ var _images_goldenSpear_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_goldenSpear_png__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "C:\\Users\\hmarkus\\Desktop\\goldenSpear\\golden-spearTestFront\\src\\SignUp.js";
+
+
+function SignUp() {
+  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState2 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+        email = _useState2[0],
+        setEmail = _useState2[1];
+
+  const _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState4 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+        password = _useState4[0],
+        setPassword = _useState4[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", {
+    className: "navbar navbar-expand navbar-light bg-light",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "navbar-brand",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Goldenspear"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "navbar-nav mr-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav-link",
+    href: "/login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "Login")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav-item active",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav-link",
+    href: "/singup",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Sign Up")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "pt-5 mt-5 text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "container d-flex flex-column justify-content-center align-items-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card col-12 col-sm-10 col-md-8 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", {
+    className: "pt-3",
+    style: {
+      fontSize: 21
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, " Sign Up "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "card-body text-left",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Email address"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "email",
+    class: "form-control",
+    placeholder: "Email",
+    onChange: event => {
+      setEmail(event.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    className: "pt-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "Password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "password",
+    class: "form-control",
+    placeholder: "Password",
+    onChange: event => {
+      setPassword(event.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-check pt-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "checkbox",
+    className: "form-check-input",
+    required: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    className: "form-check-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, "I agree to the terms and conditons")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "pt-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, "Are you registered?  ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "/signIn",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, "Click here to log in!")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    type: "submit",
+    onClick: () => console.log(email, password),
+    class: "btn btn-primary mt-4 float-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, "Register")))))));
+}
+
+/***/ }),
+
+/***/ "./src/helpers/APIcalls.js":
+/*!*********************************!*\
+  !*** ./src/helpers/APIcalls.js ***!
+  \*********************************/
+/*! exports provided: loginCall */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loginCall", function() { return loginCall; });
+const link = "http://localhost:9000/api";
+async function loginCall(email, password) {
+  let response = await fetch(link + "/user/login", {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      username: email,
+      password: password
+    })
+  });
+
+  if (response.ok) {
+    return await response.json();
+  } else return {
+    success: false
+  };
+}
+
+/***/ }),
+
+/***/ "./src/images/goldenSpear.png":
+/*!************************************!*\
+  !*** ./src/images/goldenSpear.png ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "C:\\Users\\hmarkus\\Desktop\\goldenSpear\\golden-spearTestFront\\src\\index.js";
+
+
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_4__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read https://bit.ly/CRA-PWA
+const isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) {}
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(registration => {
+    registration.onupdatefound = () => {
+      const installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = () => {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See https://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(error => {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(response => {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    const contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(registration => {
+        registration.unregister().then(() => {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(() => {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+  }
+}
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\hmarkus\Desktop\goldenSpear\golden-spearTestFront\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\hmarkus\Desktop\goldenSpear\golden-spearTestFront\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[0,"runtime-main",0]]]);
+//# sourceMappingURL=main.chunk.js.map

@@ -1,0 +1,196 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/Chat.js":
+/*!*********************!*\
+  !*** ./src/Chat.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LogIn; });
+/* harmony import */ var C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _helpers_APIcalls__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers/APIcalls */ "./src/helpers/APIcalls.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_5__);
+
+var _jsxFileName = "C:\\Users\\hmarkus\\Desktop\\goldenSpear\\golden-spearTestFront\\src\\Chat.js";
+
+
+
+
+
+
+function handleStart() {}
+
+function onLogOutClick() {
+  localStorage.removeItem("userToken");
+  window.location.href = "/";
+}
+
+function LogIn() {
+  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState2 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+        email = _useState2[0],
+        setEmail = _useState2[1];
+
+  const _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
+        _useState4 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
+        password = _useState4[0],
+        setPassword = _useState4[1];
+
+  const _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+        _useState6 = Object(C_Users_hmarkus_Desktop_goldenSpear_golden_spearTestFront_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState5, 2),
+        error = _useState6[0],
+        setError = _useState6[1];
+
+  handleStart();
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", {
+    className: "navbar navbar-expand navbar-light bg-light",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "navbar-brand",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "Goldenspear"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "navbar-nav mr-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav-item active",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav-link",
+    href: "/login",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Messages"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: {
+      cursor: "pointer"
+    },
+    onClick: () => {
+      onLogOutClick();
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, " ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faSignOutAlt"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }), " Log out")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "mt-4 text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "container d-flex flex-column",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, "Messages"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "MessagesContainer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, " sadasdad"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    class: "p-2 mt-5 text-left Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, " sadasdad")))));
+}
+
+/***/ })
+
+})
+//# sourceMappingURL=main.1900f6bafb8925fef143.hot-update.js.map
