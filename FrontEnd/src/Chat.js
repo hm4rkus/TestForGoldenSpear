@@ -8,62 +8,6 @@ import { Button, Form, Nav, Navbar, Card } from 'react-bootstrap';
 
 
 
-async function handleStart(setMessages, setLoading) {
-
-    let response = await getMessages();
-    if (response.success) {
-        setMessages(response.result);
-        setLoading(false);
-    }
-}
-
-function onLogOutClick() {
-    localStorage.removeItem("userToken");
-    window.location.href = "/"
-}
-
-function renderMessages(messages, messagesIndex, isLoading) {
-
-    if (isLoading) {
-        return (
-            <div className="d-flex justify-content-center align-items-center w-100 h-100">
-                <div className="spinner-border" role="status">
-                </div>
-            </div>
-        )
-    }
-    else if (messages) {
-        return messages.map((item) => {
-            return (
-                <div className="p-2 my-3 text-left Message">{item[messagesIndex]}</div>
-            )
-        })
-    }
-}
-
-async function sendMessage(messages, messageInput, setMessages, setInput) {
-    let messagesAux = messages;
-    //let response = await postMessage(messageInput);
-
-    if (true) {
-        setMessages(messagesAux.push({ decrypted: messageInput, encrypted: "asdasdasdad" }));
-        setInput("");
-    }
-
-}
-
-
-function handleCheck(encryptedCheck, setCheck, setIndex) {
-
-    if (encryptedCheck) {
-        setCheck(false);
-        setIndex("decrypted");
-    } else {
-        setCheck(true);
-        setIndex("encrypted")
-    }
-}
-
 
 export default function LogIn() {
 
@@ -73,21 +17,30 @@ export default function LogIn() {
     const [encryptedCheck, setCheck] = useState(false);
     const [messageInput, setInput] = useState("");
     const [end, setEnd] = useState("");
+    const[token, setToken] = useState("");
+    const [userObject, setUserObject] = useState({loading: true, messages:[], token:""});
 
     useEffect(() => {
         if (end)
             end.scrollIntoView({ behavior: "smooth" });
-    }, [messages, messageInput])
+    }, [userObject.messages, messageInput])
 
-    var messagesRendered;
 
     async function handleStart() {
+        let token = JSON.parse(localStorage.getItem("userToken"));
+        let obj = {};
+        if (token && token.expiration > new Date().getTime())
+            obj.token = token;
+        else
+            window.location.href = "/"
 
         let response = await getMessages();
         if (response.success) {
-            setMessages(response.result);
-            setLoading(false);
+            obj.messages = response.result;
         }
+        obj.loading = false;
+        setUserObject(obj);
+
     }
 
     function onLogOutClick() {
@@ -96,8 +49,9 @@ export default function LogIn() {
     }
 
     function renderMessages() {
+        console.log(userObject);
 
-        if (isLoading) {
+        if (userObject.loading) {
             return (
                 <div className="d-flex justify-content-center align-items-center w-100 h-100">
                     <div className="spinner-border" role="status">
@@ -105,8 +59,8 @@ export default function LogIn() {
                 </div>
             )
         }
-        else if (messages.length != 0) {
-            return messages.map((item) => {
+        else if (userObject.messages.length != 0) {
+            return userObject.messages.map((item) => {
                 return (
                     <div className="row d-flex justify-content-center">
                         <div className="p-2 mt-3 text-left Message col-10 col-md-8">{item[messagesIndex]}</div>
@@ -127,7 +81,7 @@ export default function LogIn() {
             let response = await postMessage(messageInput);
 
             if (response.success) {
-                setMessages([...messages, response.result]);
+                setUserObject({messages: [...userObject.messages, response.result], loading : false, token: (userObject.token)});
                 setInput("");
             }
 
@@ -148,7 +102,7 @@ export default function LogIn() {
 
 
 
-    if (isLoading) {
+    if (userObject.loading) {
         handleStart();
     }
 
@@ -167,7 +121,7 @@ export default function LogIn() {
 
 
                 </Nav>
-                <div className="px-4 d-none d-sm-block">Hey <b> {JSON.parse(localStorage.getItem("userToken")).email.split("@")[0]}</b> !</div>  <div style={{ cursor: "pointer" }} onClick={() => { onLogOutClick() }}> <FontAwesomeIcon icon={faSignOutAlt} /> Log out</div> 
+                <div className="px-4 d-none d-sm-block">Hey <b> {userObject.token && userObject.token.email.split("@")[0]}</b> !</div>  <div style={{ cursor: "pointer" }} onClick={() => { onLogOutClick() }}> <FontAwesomeIcon icon={faSignOutAlt} /> Log out</div>
 
             </Navbar>
 
@@ -191,7 +145,7 @@ export default function LogIn() {
                     </Card.Footer>
 
                 </Card>
-                <div className="pt-3" onClick={()=>handleCheck()}>
+                <div className="pt-3" onClick={() => handleCheck()}>
                     <Form.Check type="checkbox" checked={encryptedCheck} label="Encrypted" onChange={(event) => {
                         handleCheck()
                     }} />
